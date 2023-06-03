@@ -1,0 +1,8 @@
+# Ignorar directorios
+node_modules/
+dist/
+
+.vscode
+
+# Ignorar archivos
+.env
