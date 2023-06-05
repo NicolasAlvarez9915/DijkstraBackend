@@ -151,7 +151,9 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve({Respuesta: 'Inserción exitosa' });
+                    nodo.id = result.insertId;
+                    nodo.nodosConectados = [];
+                    resolve({Respuesta: 'Inserción exitosa', nodo: nodo });
                 });
             });
         }catch (error) {
