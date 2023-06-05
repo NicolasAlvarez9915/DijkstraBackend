@@ -151,7 +151,7 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve('Inserción exitosa');
+                    resolve({Respuesta: 'Inserción exitosa' });
                 });
             });
         }catch (error) {
@@ -176,7 +176,7 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve('Inserción exitosa');
+                    resolve({ Respuesta: 'Inserción exitosa'});
                 });
             });
         }catch (error) {
@@ -200,7 +200,7 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve('Eliminacion exitosa');
+                    resolve({Respuesta: 'Eliminacion exitosa'});
                 });
             });
         }catch (error) {
@@ -224,7 +224,7 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve('Eliminacion exitosa');
+                    resolve({Respuesta: 'Eliminacion exitosa'});
                 });
             });
         }catch (error) {
@@ -247,7 +247,7 @@ class Connection{
                         reject('Error al ejecutar la consulta:', error);
                         return;
                     }
-                    resolve('Eliminacion exitosa');
+                    resolve({Respuesta: 'Eliminacion exitosa'});
                 });
             });
         }catch (error) {
