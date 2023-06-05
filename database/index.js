@@ -153,7 +153,7 @@ class Connection{
                     }
                     nodo.id = result.insertId;
                     nodo.nodosConectados = [];
-                    resolve({Respuesta: 'Inserción exitosa', nodo: nodo });
+                    resolve({ nodo: nodo });
                 });
             });
         }catch (error) {
